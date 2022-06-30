@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.svg">
+    <title>CelTec</title>
+</head>
+<body>
+<!--=====ENCABEZADO=====-->
+    <header class="header">
+        <div class="encabezado">
+           <a href="index.html"><img src="img/logo.svg" class="logo" alt="Logo"></a>
+        </div>
+        <div class="buscar">
+            <input class="campo_buscar" type="text" name="Nombre completo" id="Camponombre" placeholder="Buscar producto">
+            <input class="boton_buscar" type="submit" value="Buscar">
+        </div>
+        <div class="cuenta">
+            <a href="html/login.html"><img src="img/iconos/perfil.png" alt="perfil" class="perfil"></a>
+            <a href="html/carrito.html"><img src="img/iconos/carrito.png" alt="Carrito" class="carrito"></a>
+        </div>
+     </header>
+<!--=====MENU NAVEGACION=====-->
+        <nav class="nav">
+            <ul>
+                <li class="navinicio"><a href="index.html">Inicio</a></li>
+                <li class="navcelulares"><a href="html/celulares.html">Celulares</a></li>
+                <li class="navnotebooks"><a href="html/notebooks.html">Notebooks</a></li>
+                <li class="navinformatica"><a href="html/informatica.html">Informática</a></li>
+                <li class="dropdown navaccesorios">
+                  <a href="#" class="dropbtn">Accesorios ▾</a>
+                  <div class="dropdown-content">
+                    <a href="html/accesorios/auriculares.html" class="sub_accesorios">Auriculares</a>
+                    <a href="html/accesorios/cables.html" class="sub_accesorios">Cables</a>
+                    <a href="html/accesorios/cargadores.html" class="sub_accesorios">Cargadores</a>
+                    <a href="html/accesorios/protectores.html" class="sub_accesorios">Protectores</a>
+                  </div>
+                </li>
+                <li class="navcontacto"><a href="html/contacto.html">Contacto</a></li>
+              </ul>
+        </nav>
+    <main class="main">
+    <div class="filtros">
+        <div class="fil filtro_categoria">
+            <h4>Categoría</h4>
+                <select>
+                    <option> </option>
+                    <option>Celulares</option>
+                    <option>Notebook</option>
+                    <option>Tablets</option>
+                    <option>Impresoras</option>
+                    <option>Escaners</option>
+                    <option>Parlantes</option>
+                    <option>Monitores</option>
+                    <option>Accesorios</option>
+                </select>
+        </div>
+        <div class="fil filtro_marca">
+            <h4>Marca</h4>
+                    <select>
+                        <option> </option>
+                        <option>Apple</option>
+                        <option>Samsung</option>
+                        <option>Acer</option>
+                        <option>Lenovo</option>
+                        <option>HP</option>
+                        <option>Asus</option>
+                        <option>Huawei</option>
+                    </select>
+        </div>
+        <div class="fil filtro_precio">
+                <h4>Precio:</h4>
+                <input type="range" name="Rango" id="Rango">
+        </div>
+        <div class="fil filtro_procesador">
+            <h4>Procesador</h4>
+                    <select>
+                        <option> </option>
+                        <option>AMD Ryzen 5</option>
+                        <option>AMD Ryzen 7</option>
+                        <option>AMD Ryzen 9</option>
+                        <option>Intel Core i5</option>
+                        <option>Intel Core i7</option>
+                        <option>Intel Core i9</option>
+                        <option>Intel Celeron</option>
+                    </select>
+        </div>
+                <div class="fil filtro_memoria">
+            <h4>Memoria</h4>
+                    <select>
+                        <option> </option>
+                        <option>2GB</option>
+                        <option>4GB</option>
+                        <option>6GB</option>
+                        <option>8GB</option>
+                        <option>12GB</option>
+                        <option>16GB</option>
+                    </select>
+        </div>
+        <div class="fil filtro_almacenamiento">
+            <h4>Almacenamiento</h4>
+                    <select>
+                        <option> </option>
+                        <option><128GB</option>
+                        <option>128GB</option>
+                        <option>256GB</option>
+                        <option>512GB</option>
+                        <option>1TB</option>
+                        <option>>1TB</option>
+                    </select>
+        </div>
+        </div>
+      <div class="productos">
+        <div class="celulares">
+            <div class="cel celuno wow bounceIn">
+                <img src="img/productos/celulares/iphone8.jpg" alt="iPhone 8" >
+                <h4><a href="html/productos/celulares/cel-uno.html" >iPhone 8</a></h4>
+                <div class="caracteristicas_cel">
+                    <img src="img/iconos/so_ios.png" alt="Sistema operativo">
+                    <img src="img/iconos/camara.png" alt="Cámara">
+                    <img src="img/iconos/almacenamiento.png" alt="Almacenamiento">
+                    <img src="img/iconos/procesador.png" alt="Procesador">
+                    <img src="img/iconos/ram.png" alt="Memoria Ram">
+                    <img src="img/iconos/wifi.png" alt="Conexion Wifi">
+                    <img src="img/iconos/bluetooth.png" alt="Bluetooth">
+                </div>
+                <h5 class="wow">U$S 700</h5>
+            </div>
+
+            <div class="cel celdos wow bounceIn">
+                <img src="img/productos/celulares/iphonex.jpg" alt="iPhone X">
+                <h4><a href="html/productos/celulares/cel-dos.html">iPhone X</a></h4>
+                <div class="caracteristicas_cel">
+                    <img src="img/iconos/so_ios.png" alt="Sistema operativo">
+                    <img src="img/iconos/camara.png" alt="Cámara">
+                    <img src="img/iconos/almacenamiento.png" alt="Almacenamiento">
+                    <img src="img/iconos/procesador.png" alt="Procesador">
+                    <img src="img/iconos/ram.png" alt="Memoria Ram">
+                    <img src="img/iconos/wifi.png" alt="Conexion Wifi">
+                    <img src="img/iconos/bluetooth.png" alt="Bluetooth">
+                </div>
+                <h5>U$S 1000</h5>
+            </div>
+           
+            
+            <div class="cel celtres wow bounceIn">
+                <img src="img/productos/celulares/iphone11.jpg" alt="iPhone 11">
+                <h4><a href="html/productos/celulares/cel-tres.html">iPhone 11</a></h4>
+                <div class="caracteristicas_cel">
+                    <img src="img/iconos/so_ios.png" alt="Sistema operativo">
+                    <img src="img/iconos/camara.png" alt="Cámara">
+                    <img src="img/iconos/almacenamiento.png" alt="Almacenamiento">
+                    <img src="img/iconos/procesador.png" alt="Procesador">
+                    <img src="img/iconos/ram.png" alt="Memoria Ram">
+                    <img src="img/iconos/wifi.png" alt="Conexion Wifi">
+                    <img src="img/iconos/bluetooth.png" alt="Bluetooth">
+                </div>
+                <h5>U$S 1200</h5>
+            </div>
+           
+            
+            <div class="cel celcuatro wow bounceIn">
+                <img src="img/productos/celulares/iphone12.jpg" alt="iPhone 12">
+                <h4><a href="html/productos/celulares/cel-cuatro.html">iPhone 12</a></h4>
+                <div class="caracteristicas_cel">
+                    <img src="img/iconos/so_ios.png" alt="Sistema operativo">
+                    <img src="img/iconos/camara.png" alt="Cámara">
+                    <img src="img/iconos/almacenamiento.png" alt="Almacenamiento">
+                    <img src="img/iconos/procesador.png" alt="Procesador">
+                    <img src="img/iconos/ram.png" alt="Memoria Ram">
+                    <img src="img/iconos/wifi.png" alt="Conexion Wifi">
+                    <img src="img/iconos/bluetooth.png" alt="Bluetooth">
+                </div>
+                <h5>U$S 1500</h5>
+            </div>
+           
+            <div class="cel celcinco wow bounceIn">
+                <img src="img/productos/celulares/iphone13.jpg" alt="iPhone 13">
+                <h4><a href="html/productos/celulares/cel-cinco.html">iPhone 13</a></h4>
+                <div class="caracteristicas_cel">
+                    <img src="img/iconos/so_ios.png" alt="Sistema operativo">
+                    <img src="img/iconos/camara.png" alt="Cámara">
+                    <img src="img/iconos/almacenamiento.png" alt="Almacenamiento">
+                    <img src="img/iconos/procesador.png" alt="Procesador">
+                    <img src="img/iconos/ram.png" alt="Memoria Ram">
+                    <img src="img/iconos/wifi.png" alt="Conexion Wifi">
+                    <img src="img/iconos/bluetooth.png" alt="Bluetooth">
+                </div>
+                <h5>U$S 1700</h5>
+            </div>
+            
+            <div class="cel celseis wow bounceIn">
+                <img src="img/productos/celulares/samsungs20.jpg" alt="Samsung Galaxy S20">
+                <h4><a href="html/productos/celulares/cel-seis.html">Samsung Galaxy S20</a></h4>
+                <div class="caracteristicas_cel">
+                    <img src="img/iconos/so_android.png" alt="Sistema operativo">
+                    <img src="img/iconos/camara.png" alt="Cámara">
+                    <img src="img/iconos/almacenamiento.png" alt="Almacenamiento">
+                    <img src="img/iconos/procesador.png" alt="Procesador">
+                    <img src="img/iconos/ram.png" alt="Memoria Ram">
+                    <img src="img/iconos/wifi.png" alt="Conexion Wifi">
+                    <img src="img/iconos/bluetooth.png" alt="Bluetooth">
+                </div>
+                <h5>U$S 1700</h5>
+            </div>
+            
+            <div class="cel celsiete wow bounceIn">
+                <img src="img/productos/celulares/samsungs21.jpg" alt="Samsung Galaxy S21">
+                <h4><a href="html/productos/celulares/cel-siete.html">Samsung Galaxy S21</a></h4>
+                <div class="caracteristicas_cel">
+                    <img src="img/iconos/so_android.png" alt="Sistema operativo">
+                    <img src="img/iconos/camara.png" alt="Cámara">
+                    <img src="img/iconos/almacenamiento.png" alt="Almacenamiento">
+                    <img src="img/iconos/procesador.png" alt="Procesador">
+                    <img src="img/iconos/ram.png" alt="Memoria Ram">
+                    <img src="img/iconos/wifi.png" alt="Conexion Wifi">
+                    <img src="img/iconos/bluetooth.png" alt="Bluetooth">
+                </div>
+                <h5>U$S 1700</h5>
+            </div>
+            
+            <div class="cel celcelocho wow bounceIn">
+                <img src="img/productos/celulares/samsungs21.jpg" alt="Samsung Galaxy S22">
+                <h4><a href="html/productos/celulares/cel-ocho.html">Samsung Galaxy S22</a></h4>
+                <div class="caracteristicas_cel">
+                    <img src="img/iconos/so_android.png" alt="Sistema operativo">
+                    <img src="img/iconos/camara.png" alt="Cámara">
+                    <img src="img/iconos/almacenamiento.png" alt="Almacenamiento">
+                    <img src="img/iconos/procesador.png" alt="Procesador">
+                    <img src="img/iconos/ram.png" alt="Memoria Ram">
+                    <img src="img/iconos/wifi.png" alt="Conexion Wifi">
+                    <img src="img/iconos/bluetooth.png" alt="Bluetooth">
+                </div>
+                <h5>U$S 1700</h5>
+            </div>
+        </div>
+
+        <div class="notebooks">
+            <div class="note noteuno wow bounceIn">
+                <img src="img/productos/notebooks/acer-a315.png" alt="Notebook Acer">
+                <h4><a href="#">Notebook Acer</a></h4>
+                <div class="caracteristicas_note">
+                    <img src="img/iconos/so_windows.png" alt="Sistema operativo">
+                    <img src="img/iconos/camara.png" alt="Cámara">
+                    <img src="img/iconos/almacenamiento.png" alt="Almacenamiento">
+                    <img src="img/iconos/procesador.png" alt="Procesador">
+                    <img src="img/iconos/ram.png" alt="Memoria Ram">
+                    <img src="img/iconos/wifi.png" alt="Conexion Wifi">
+                    <img src="img/iconos/bluetooth.png" alt="Bluetooth">
+                </div>
+                <h5>U$S 1700</h5>
+            </div>
+
+            <div class="note notedos wow bounceIn">
+                <img src="img/productos/notebooks/lenovo-15ar.png" alt="Notebook Lenovo">
+                <h4><a href="#">Notebook Lenovo</a></h4>
+                <div class="caracteristicas_note">
+                    <img src="img/iconos/so_windows.png" alt="Sistema operativo">
+                    <img src="img/iconos/camara.png" alt="Cámara">
+                    <img src="img/iconos/almacenamiento.png" alt="Almacenamiento">
+                    <img src="img/iconos/procesador.png" alt="Procesador">
+                    <img src="img/iconos/ram.png" alt="Memoria Ram">
+                    <img src="img/iconos/wifi.png" alt="Conexion Wifi">
+                    <img src="img/iconos/bluetooth.png" alt="Bluetooth">
+                </div>
+                <h5>U$S 1700</h5>
+            </div>
+
+            <div class="note notetres wow bounceIn">
+                <img src="img/productos/notebooks/asus-x512.png" alt="Notebook Asus">
+                <h4><a href="#">Notebook Asus</a></h4>
+                <div class="caracteristicas_note">
+                    <img src="img/iconos/so_windows.png" alt="Sistema operativo">
+                    <img src="img/iconos/camara.png" alt="Cámara">
+                    <img src="img/iconos/almacenamiento.png" alt="Almacenamiento">
+                    <img src="img/iconos/procesador.png" alt="Procesador">
+                    <img src="img/iconos/ram.png" alt="Memoria Ram">
+                    <img src="img/iconos/wifi.png" alt="Conexion Wifi">
+                    <img src="img/iconos/bluetooth.png" alt="Bluetooth">
+                </div>
+                <h5>U$S 1700</h5>
+            </div>
+
+            <div class="note notecuatro wow bounceIn">
+                <img src="img/productos/notebooks/hp-15z.png" alt="Notebook HP">
+                <h4><a href="#">Notebook HP</a></h4>
+                <div class="caracteristicas_note">
+                    <img src="img/iconos/so_windows.png" alt="Sistema operativo">
+                    <img src="img/iconos/camara.png" alt="Cámara">
+                    <img src="img/iconos/almacenamiento.png" alt="Almacenamiento">
+                    <img src="img/iconos/procesador.png" alt="Procesador">
+                    <img src="img/iconos/ram.png" alt="Memoria Ram">
+                    <img src="img/iconos/wifi.png" alt="Conexion Wifi">
+                    <img src="img/iconos/bluetooth.png" alt="Bluetooth">
+                </div>
+                <h5>U$S 1700</h5>
+            </div>
+
+            <div class="note notecinco wow bounceIn">
+                <img src="img/productos/notebooks/huawei-d14.png" alt="Notebook Huawei">
+                <h4><a href="#">Notebook Huawei</a></h4>
+                <div class="caracteristicas_note">
+                    <img src="img/iconos/so_windows.png" alt="Sistema operativo">
+                    <img src="img/iconos/camara.png" alt="Cámara">
+                    <img src="img/iconos/almacenamiento.png" alt="Almacenamiento">
+                    <img src="img/iconos/procesador.png" alt="Procesador">
+                    <img src="img/iconos/ram.png" alt="Memoria Ram">
+                    <img src="img/iconos/wifi.png" alt="Conexion Wifi">
+                    <img src="img/iconos/bluetooth.png" alt="Bluetooth">
+                </div>
+                <h5>U$S 1700</h5>
+            </div>
+
+            <div class="note noteseis wow bounceIn">
+                <img src="img/productos/notebooks/huawei-d14.png" alt="Notebook Huawei">
+                <h4><a href="#">Notebook Huawei</a></h4>
+                <div class="caracteristicas_note">
+                    <img src="img/iconos/so_windows.png" alt="Sistema operativo">
+                    <img src="img/iconos/camara.png" alt="Cámara">
+                    <img src="img/iconos/almacenamiento.png" alt="Almacenamiento">
+                    <img src="img/iconos/procesador.png" alt="Procesador">
+                    <img src="img/iconos/ram.png" alt="Memoria Ram">
+                    <img src="img/iconos/wifi.png" alt="Conexion Wifi">
+                    <img src="img/iconos/bluetooth.png" alt="Bluetooth">
+                </div>
+                <h5>U$S 1700</h5>
+            </div>
+        </div>
+      </div>
+    </main>
+<!--=====FOOTER=====-->
+    <footer>
+        <div class="redes-sociales">
+            <a href="https://twitter.com/" target="_blank"><img src="img/iconos/twitter.png" alt="icono Twitter" ></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/iconos/instagram.png" alt="icono Instragram" ></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="img/iconos/facebook.png" alt="icono Facebook" ></a>
+        </div>
+        <h6>© 2022. Todos los derechos reservados.</h6>
+        <div class="pie-contacto">
+            <a href="https://goo.gl/maps/gePNVgzgK8NoPjXs8" target="_blank"><img src="img/iconos/ubicacion.png" alt="icono ubicacion" ></a>
+            <a href="https://api.whatsapp.com/send?phone=59897959728&text=Hola Mundo!%21&source=&data=&app_absent=" target="_blank"><img src="img/iconos/telefono.png" alt="icono telefono" ></a>
+            <a href="mailto:gonzalo.recoba@gmail.com" target="_blank"><img src="img/iconos/e-mail.png" alt="icono email" ></a>
+        </div>
+    </footer>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script></body>
+</html>

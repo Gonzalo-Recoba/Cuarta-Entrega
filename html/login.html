@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celtec - Login</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="icon" type="../image/x-icon" href="../img/favicon.svg">
+</head>
+<body>
+    <!--ENCABEZADO-->
+    <header class="header">
+        <div class="encabezado">
+           <a href="../index.html"><img src="../img/logo.svg" class="logo" alt="Logo"></a>
+        </div>
+        <div class="buscar">
+            <input class="campo_buscar" type="text" name="Nombre completo" id="Camponombre" placeholder="Buscar producto">
+            <input class="boton_buscar" type="submit" value="Buscar">
+        </div>
+        <div class="cuenta">
+            <a href="login.html"><img src="../img/iconos/perfil.png" alt="perfil" class="perfil"></a>
+            <a href="carrito.html"><img src="../img/iconos/carrito.png" alt="Carrito" class="carrito"></a>
+        </div>
+     </header>
+<!--MENU NAVEGACION-->
+        <nav class="nav">
+            <ul>
+                <li class="navinicio"><a href="../index.html">Inicio</a></li>
+                <li class="navcelulares"><a href="celulares.html">Celulares</a></li>
+                <li class="navnotebooks"><a href="notebooks.html">Notebooks</a></li>
+                <li class="navinformatica"><a href="informatica.html">Informática</a></li>
+                <li class="dropdown navaccesorios">
+                  <a href="#" class="dropbtn">Accesorios ▾</a>
+                  <div class="dropdown-content">
+                    <a href="accesorios/auriculares.html">Auriculares</a>
+                    <a href="accesorios/cables.html">Cables</a>
+                    <a href="accesorios/cargadores.html">Cargadores</a>
+                    <a href="accesorios/protectores.html">Protectores</a>
+                  </div>
+                </li>
+                <li class="navcontacto"><a href="contacto.html">Contacto</a></li>
+              </ul>
+        </nav>
+        <main class="login">
+            <form class="form_login wow swing">
+                <fieldset class="fieldset_login">
+                    <legend>Iniciar sesión</legend>
+                        <label for="email" class="form_email form">Correo Electrónico:</label>
+                        <input type="email" name="email" id="email" class="form_respuesta" placeholder="usuario@dominio.com" required>
+                        <label class="form_email form" for="campo-contraseña">Contraseña:</label>
+                        <input type="password" class="form_respuesta" name="Contraseña" id="Contraseña" placeholder="Ingrese su contraseña" required>                
+                        <input type="submit" class="form_enviar" value="Iniciar sesión">
+                        <h4><a href="#" class="recuperar_contraseña">¿Olvido su contraseña?</a></h4>
+                        <div class="login_with">
+                            <h4 class="iniciar_sesión_con">Iniciar sesión con:</h4>
+                            <a href="https://www.facebook.com/" target="_blank">
+                            <img src="../img/iconos/login_facebook.png" alt="iniciar sesión con Facebook" class="icono_login_with">
+                            </a>
+                            <a href="https://www.google.com.uy" target="_blank">
+                                <img src="../img/iconos/login_google.png" alt="iniciar sesión con Google" class="icono_login_with">
+                            </a>
+                            <a href="https://www.icloud.com" target="_blank">
+                                <img src="../img/iconos/login_apple.png" alt="iniciar sesión con iCloud" class="icono_login_with">
+                            </a>
+                        </div>
+                        <h4 class="usuario_no_registrado">No soy usuario registrado y quiero crear una cuenta:</h4>
+                        <input type="Reset" class="form_enviar" value="Registrarse">
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+          <div class="redes-sociales">
+              <a href="https://twitter.com/" target="_blank"><img src="../img/iconos/twitter.png" alt="icono Twitter" ></a>
+              <a href="https://www.instagram.com/" target="_blank"><img src="../img/iconos/instagram.png" alt="icono Instragram" ></a>
+              <a href="https://www.facebook.com/" target="_blank"><img src="../img/iconos/facebook.png" alt="icono Facebook" ></a>
+          </div>
+          <h6>© 2022. Todos los derechos reservados.</h6>
+          <div class="pie-contacto">
+              <a href="https://goo.gl/maps/gePNVgzgK8NoPjXs8" target="_blank"><img src="../img/iconos/Ubicacion.png" alt="icono ubicacion" ></a>
+              <a href="https://api.whatsapp.com/send?phone=59897959728&text=Hola Mundo!%21&source=&data=&app_absent=" target="_blank"><img src="../img/iconos/Telefono.png" alt="icono telefono" ></a>
+              <a href="mailto:gonzalo.recoba@gmail.com" target="_blank"><img src="../img/iconos/e-Mail.png" alt="icono email" ></a>
+          </div>
+      </footer>
+      <script src="../js/wow.min.js"></script>
+      <script>
+      new WOW().init();
+      </script>
+</body>
+</html>

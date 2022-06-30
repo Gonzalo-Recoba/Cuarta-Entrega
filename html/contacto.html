@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celtec - Contacto</title>
+    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../css/animate.css">
+
+    <link rel="icon" type="../image/x-icon" href="../img/favicon.svg">
+</head>
+<body>
+<!--ENCABEZADO-->
+  <header class="header">
+      <div class="encabezado">
+          <a href="../index.html"><img src="../img/logo.svg" class="logo" alt="Logo"></a>
+      </div>
+      <div class="buscar">
+          <input class="campo_buscar" type="text" name="Nombre completo" id="Camponombre" placeholder="Buscar producto">
+          <input class="boton_buscar" type="submit" value="Buscar">
+      </div>
+      <div class="cuenta">
+          <a href="login.html"><img src="../img/iconos/perfil.png" alt="perfil" class="perfil"></a>
+          <a href="carrito.html"><img src="../img/iconos/carrito.png" alt="Carrito" class="carrito"></a>
+      </div>
+    </header>
+<!--MENU NAVEGACION-->
+  <nav class="nav">
+      <ul>
+          <li class="navinicio"><a href="../index.html">Inicio</a></li>
+          <li class="navcelulares"><a href="celulares.html">Celulares</a></li>
+          <li class="navnotebooks"><a href="notebooks.html">Notebooks</a></li>
+          <li class="navinformatica"><a href="informatica.html">Informática</a></li>
+          <li class="dropdown navaccesorios">
+            <a href="#" class="dropbtn">Accesorios ▾</a>
+            <div class="dropdown-content">
+              <a href="accesorios/auriculares.html">Auriculares</a>
+              <a href="accesorios/cables.html">Cables</a>
+              <a href="accesorios/cargadores.html">Cargadores</a>
+              <a href="accesorios/protectores.html">Protectores</a>
+            </div>
+          </li>
+          <li class="navcontacto"><a href="contacto.html">Contacto</a></li>
+        </ul>
+  </nav>
+<!--=====MAIN=====-->
+    <main class="caja_central">
+      <form class="wow bounceInLeft">
+          <fieldset>
+              <legend>Formulario de Contacto</legend>
+                  <label for="Nombre-completo" class="form_nombre form">Nombre:</label>
+                  <input type="text" name="Nombre completo form" id="Camponombre" class="form_respuesta" placeholder="Juan Pérez" required>
+                  <label for="email" class="form_email form">Correo Electrónico:</label>
+                  <input type="email" name="email" id="email" class="form_respuesta" placeholder="usuario@dominio.com" required>
+                  <label for="numero" class="form_numero form">Número de celular</label>
+                  <input type="number" name="Número" id="Número" class="form_respuesta" class="form_respuesta" placeholder="09*******" required>
+                  <label for="Comentario" class="form_comentario form">Consulta:</label>
+                  <textarea name="areatexto" id="Comentarioo" cols="#" rows="#" class="form_respuesta comentario"></textarea>
+                  <label for="archivo" class="form_adjuntar form">Adjuntar archivo</label>
+                  <input type="file" class="form_respuesta" name="archivo" id="archivo">
+                  <input type="submit" class="form_enviar" value="Enviar">
+                  <input type="Reset" class="form_enviar" value="Borrar datos">
+          </fieldset>
+      </form>
+      <div class="pie_contacto wow bounceInRight">
+          <p class="horario_de_atencion texto_contacto">Nuestro horario de atención es de lunes a viernes de 9:00 a 18:00 horas.</p>
+          <p class="nos_encontramos texto_contacto">Nos encontramos ubicados en Av. 18 de Julio 1513, Esq. Tacuarembó. Montevideo, Uruguay. C.P. 16300</p>
+          <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d409.00923595911485!2d-56.183036171680946!3d-34.904595232693595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81cae9a3b6f5%3A0xb552e4b5955ef611!2sAv.%2018%20de%20Julio%201513%2C%2011100%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses!2suy!4v1654205932016!5m2!1ses!2suy" width="500" height="300" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+  </main>
+  <footer>
+    <div class="redes-sociales">
+        <a href="https://twitter.com/" target="_blank"><img src="../img/iconos/twitter.png" alt="icono Twitter" ></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="../img/iconos/instagram.png" alt="icono Instragram" ></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../img/iconos/facebook.png" alt="icono Facebook" ></a>
+    </div>
+    <h6>© 2022. Todos los derechos reservados.</h6>
+    <div class="pie-contacto">
+        <a href="https://goo.gl/maps/gePNVgzgK8NoPjXs8" target="_blank"><img src="../img/iconos/Ubicacion.png" alt="icono ubicacion" ></a>
+        <a href="https://api.whatsapp.com/send?phone=59897959728&text=Hola Mundo!%21&source=&data=&app_absent=" target="_blank"><img src="../img/iconos/Telefono.png" alt="icono telefono" ></a>
+        <a href="mailto:gonzalo.recoba@gmail.com" target="_blank"><img src="../img/iconos/e-Mail.png" alt="icono email" ></a>
+    </div>
+</footer>
+<script src="../js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
+
+</body>
+</html>
